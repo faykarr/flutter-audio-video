@@ -1,5 +1,6 @@
 import 'package:audio_video_flutter/music.dart';
 import 'package:audio_video_flutter/offline_video.dart';
+import 'package:audio_video_flutter/youtube_video.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -42,8 +43,8 @@ class MyApp extends StatelessWidget {
             child: TabBarView(
               children: [
                 Music(),
-                OfflineVideo(),
-                Placeholder(),
+                const OfflineVideo(),
+                YoutubeVideo(),
               ],
             ),
           ),
