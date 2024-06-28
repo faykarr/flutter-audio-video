@@ -3,10 +3,10 @@ import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class YoutubeVideo extends StatelessWidget {
   YoutubeVideo({super.key});
-  static String VideoID = 'kPhpHvnnn0Q';
+  static String videoID = 'kPhpHvnnn0Q';
 
   final YoutubePlayerController _controller = YoutubePlayerController(
-    initialVideoId: VideoID,
+    initialVideoId: videoID,
     flags: const YoutubePlayerFlags(
       autoPlay: false,
       mute: false,
@@ -16,23 +16,21 @@ class YoutubeVideo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Column(
-          children: [
-            const SizedBox(
-              height: 50,
-            ),
-            const Text("Play Videos from Youtube"),
-            const SizedBox(
-              height: 30,
-            ),
-            YoutubePlayer(
-              controller: _controller,
-              showVideoProgressIndicator: true,
-              progressIndicatorColor: Colors.blueAccent,
-            ),
-          ],
-        ),
+      body: Column(
+        children: [
+          const SizedBox(
+            height: 50,
+          ),
+          const Text("Play Videos from Youtube"),
+          const SizedBox(
+            height: 30,
+          ),
+          YoutubePlayer(
+            controller: _controller,
+            showVideoProgressIndicator: true,
+            progressIndicatorColor: Colors.blueAccent,
+          ),
+        ],
       ),
     );
   }

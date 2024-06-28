@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: DefaultTabController(
-        length: 3,
+        length: 7,
         child: Scaffold(
           appBar: AppBar(
             title: const Text('Flutter Multimedia Practice'),
@@ -24,17 +24,34 @@ class MyApp extends StatelessWidget {
               tabs: [
                 Tab(
                   icon: Icon(Icons.queue_music),
-                  text: 'Music',
+                  text: 'Musics',
                 ),
                 Tab(
                   icon: Icon(Icons.video_library),
-                  text: 'Offline Video',
+                  text: 'Offline\nVideo',
                 ),
                 Tab(
                   icon: Icon(Icons.live_tv),
-                  text: 'Youtube Video',
+                  text: 'Youtube\nVideo',
+                ),
+                Tab(
+                  icon: Icon(Icons.image),
+                  text: 'Image\nGallery',
+                ),
+                Tab(
+                  icon: Icon(Icons.camera),
+                  text: 'Image\nCamera',
+                ),
+                Tab(
+                  icon: Icon(Icons.video_camera_back),
+                  text: 'Video\nGallery',
+                ),
+                Tab(
+                  icon: Icon(Icons.video_camera_front),
+                  text: 'Video\nCamera',
                 ),
               ],
+              indicatorColor: Colors.amber,
             ),
           ),
           body:  SizedBox(
@@ -45,6 +62,10 @@ class MyApp extends StatelessWidget {
                 Music(),
                 const OfflineVideo(),
                 YoutubeVideo(),
+                const Placeholder(),
+                const Placeholder(),
+                const Placeholder(),
+                const Placeholder(),
               ],
             ),
           ),
