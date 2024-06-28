@@ -1,3 +1,4 @@
+import 'package:audio_video_flutter/music.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -34,12 +35,12 @@ class MyApp extends StatelessWidget {
               ],
             ),
           ),
-          body: const SizedBox(
+          body:  SizedBox(
             height: double.infinity,
             width: double.infinity,
             child: TabBarView(
               children: [
-                Placeholder(),
+                Music(),
                 Placeholder(),
                 Placeholder(),
               ],
