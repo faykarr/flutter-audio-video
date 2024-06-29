@@ -3,7 +3,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <application
-        android:label="audio_video_flutter"
+        android:label="Flutter Multimedia Practice"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity
