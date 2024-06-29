@@ -1,3 +1,5 @@
+import 'package:audio_video_flutter/image_camera.dart';
+import 'package:audio_video_flutter/image_gallery.dart';
 import 'package:audio_video_flutter/music.dart';
 import 'package:audio_video_flutter/offline_video.dart';
 import 'package:audio_video_flutter/youtube_video.dart';
@@ -62,8 +64,8 @@ class MyApp extends StatelessWidget {
                 Music(),
                 const OfflineVideo(),
                 YoutubeVideo(),
-                const Placeholder(),
-                const Placeholder(),
+                const ImageGallery(),
+                const ImageCamera(),
                 const Placeholder(),
                 const Placeholder(),
               ],
