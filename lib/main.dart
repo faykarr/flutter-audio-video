@@ -2,6 +2,7 @@ import 'package:audio_video_flutter/image_camera.dart';
 import 'package:audio_video_flutter/image_gallery.dart';
 import 'package:audio_video_flutter/music.dart';
 import 'package:audio_video_flutter/offline_video.dart';
+import 'package:audio_video_flutter/video_camera.dart';
 import 'package:audio_video_flutter/video_gallery.dart';
 import 'package:audio_video_flutter/youtube_video.dart';
 import 'package:flutter/material.dart';
@@ -68,7 +69,7 @@ class MyApp extends StatelessWidget {
                 const ImageGallery(),
                 const ImageCamera(),
                 const VideoGallery(),
-                const Placeholder(),
+                const VideoCamera(),
               ],
             ),
           ),
